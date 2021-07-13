@@ -1,0 +1,121 @@
+version: "2.0"
+
+stories:
+
+- story: right path 1
+  steps:
+  - intent: greet
+  - action: utter_hospital
+  - action: utter_greet
+  - intent: mood_injured
+  - action: utter_type
+  - intent: nosebleed
+  - action: utter_nosebleed
+  - intent: thankyou
+  - action: utter_goodbye
+
+- story: right path 2
+  steps:
+  - intent: help
+  - action: utter_help
+  - action: utter_type
+  - intent: jaw_injury
+  - action: utter_jaw_injury
+  - intent: thankyou
+  - action: utter_goodbye
+
+- story: right path 4
+  steps:
+  - intent: help
+  - action: utter_help
+  - action: utter_type
+  - intent: bleeding
+  - action: utter_bleeding
+
+- story: right path 3
+  steps:
+  - intent: greet
+  - action: utter_hospital
+  - action: utter_greet
+  - intent: headache
+  - action: utter_headache
+  - intent: thankyou
+  - action: utter_goodbye
+
+- story: wrong path 1
+  steps:
+  - intent: greet
+  - action: utter_hospital
+  - action: utter_greet
+  - intent: ear_injury
+  - action: utter_cough
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_out_of_scope
+  - intent: affirm
+  - action: utter_type
+  - intent: ear_injury
+  - action: utter_ear_injury
+  - intent: thankyou
+  - action: utter_goodbye
+
+- story: wrong path 2
+  steps:
+  - intent: greet
+  - action: utter_hospital
+  - action: utter_greet
+  - intent: rash
+  - action: utter_animal_bite
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_end
+
+- story: survey stop
+  steps:
+  - intent: greet
+  - action: utter_hospital
+  - action: utter_greet
+  - intent: mood_injured
+  - action: utter_type
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - intent: deny
+  - action: utter_end
+
+- story: survey continue
+  steps:
+  - intent: greet
+  - action: utter_hospital
+  - action: utter_greet
+  - intent: mood_injured
+  - action: utter_type
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+  - intent: affirm
+  - action: utter_type
+  - intent: jaw_injury
+  - action: utter_jaw_injury
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: right story 1
+  steps:
+  - intent: help
+  - action: utter_help
+  - action: utter_type
+  - intent: burn
+  - action: utter_burn
+  - intent: thankyou
+  - action: utter_goodbye
+
+- story: right story 2
+  steps:
+  - intent: greet
+  - action: utter_hospital
+  - action: utter_greet
+  - intent: bleeding
+  - action: utter_bleeding
+  - intent: bleeding_arm
+  - action: utter_bleeding_arm
+  - intent: thankyou
+  - action: utter_goodbye

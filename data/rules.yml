@@ -1,0 +1,75 @@
+version: "2.0"
+
+rules:
+- rule: Greet
+  conversation_start: true
+  steps:
+  - intent: greet
+  - action: utter_hospital
+  - action: utter_greet
+- rule: handle broken leg
+  steps:
+  - intent: broken_leg
+  - action: utter_broken_leg
+  - action: utter_splint
+- rule: handle broken arm
+  steps:
+  - intent: broken_arm
+  - action: utter_broken_arm
+  - action: utter_splint
+  - action: utter_sling
+- rule: handle dislocated knee
+  steps:
+  - intent: dislocated_knee
+  - action: utter_dislocated_knee
+  - action: utter_splint
+- rule: handle dislocated shoulder
+  steps:
+  - intent: dislocated_shoulder
+  - action: utter_dislocated_shoulder
+  - action: utter_sling
+- rule: handle electric shock
+  steps:
+  - intent: electric_shock
+  - action: utter_electric_shock
+  - action: utter_cpr
+- rule: handle fainting
+  steps:
+  - intent: fainting
+  - action: utter_fainting
+  - action: utter_recovery_position
+  - action: utter_cpr
+- rule: handle chemical poisoning
+  steps:
+  - intent: chemical_poisoning
+  - action: utter_chemical_poisoning
+  - action: utter_recovery_position
+  - action: utter_cpr
+- rule: handle electric shock
+  steps:
+  - intent: electric_shock
+  - action: utter_electric_shock
+  - action: utter_cpr
+- rule: handle heart attack
+  steps:
+  - intent: heart_attack
+  - action: utter_heart_attack
+  - action: utter_cpr
+- rule: handle stroke
+  steps:
+  - intent: stroke
+  - action: utter_stroke
+  - action: utter_recovery_position
+- rule: handling food poisoning
+  steps:
+  - intent: food_poisoning
+  - action: utter_food_poisoning
+  - action: utter_vomiting
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot

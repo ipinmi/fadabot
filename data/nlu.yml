@@ -1,0 +1,961 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - let's go
+    - sup
+    - yello
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - good morning, i need help
+    - good morning, i need your help
+    - how are you?
+    - wassup 
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: thankyou
+  examples: |
+    - it helped
+    - it worked
+    - thank you for your help
+    - appreciate
+    - thanks
+    - yeah thanks
+    - it was really helpful
+    - i am grateful
+    - thank you
+    - bless you
+    - yes it was, thanks
+    - thanks it worked
+    - thank youu
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds right
+    - correct
+    - okay
+    - yeah
+    - yup
+    - sure
+    - ok
+    - k
+    - nice 
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - at all
+    - not really
+    - That is not right
+    - nope
+    - nah
+    - That is not the issue
+
+- intent: mood_better
+  examples: |
+    - it worked
+    - great
+    - amazing
+    - I feel better
+    - I am okay
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - Better
+    - super stoked
+    - Good
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - she feels better, thank you
+    - yes i am better
+    - bravooo!!
+    - Good job👏👏👏👏👏👏👏👏👏
+
+- intent: help
+  examples: |
+    - Help
+    - I have an emergency
+    - Are you there?
+    - I need help
+    - Please it is urgent
+    - Help me
+    - There is an issue
+    - Helpppp
+    - Can you help me ?
+    - i need assistance
+    - help
+    - help g
+    - hellllppppp!!!!!!
+    - can you help me
+    - help me
+    - i think someone is about to die
+    - I am dying
+
+- intent: mood_injured
+  examples: |
+    - I got injured
+    - I am sad
+    - I don't feel very well
+    - I am tired
+    - I am in pain
+    - I'm so sad
+    - Weak
+    - I feel weak
+    - I feel uncomfortable
+    - Pain
+    - Injured
+    - Someone got injured
+    - not good
+    - not very good
+    - extremly tired
+    - I am injured
+    - I just got into a car accident
+    - I just got into a motor accident
+
+- intent: burn
+  examples: |
+    - I burnt myself, What do I do?
+    - My sister burnt herself with a hot pot
+    - How to take care of a burn
+    - I poured hot oil on myself and got burnt
+    - I burnt my hand
+    - I got a burn from hot oil splashing on me
+    - Fire burnt my skin while cooking
+    - Just had a hot water burn
+
+- intent: food_poisoning
+  examples: |
+    - I think I have food poisoning
+    - The food I ate was bad
+    - My stomach hurts after I ate
+    - How do you cure food poisoning
+    - I am vomiting and stooling
+    - i have food poisoning
+    - stomach pain from spoilt food
+
+- intent: nosebleed
+  examples: |
+    - How do you treat a bleeding nose ?
+    - what to do if i my nose is bleeding?
+    - I injured my nose and it is bleeding
+    - How to treat nose bleeding ?
+    - How to stop a nosebleed
+    - My nose is bleeding
+    - I have a nosebleed
+    - nosebleed 
+    - nose bleeding
+  
+- intent: vomiting
+  examples: |
+    - How to reduce vomiting ?
+    - What medicine do you take for vomiting?
+    - I am tired of vomiting
+    - I have been vomiting all day
+    - How do you stop vomiting ?
+    - Remedies for vomiting
+    - i can't stop vomiting
+    - I am vomiting
+
+- intent: vomiting_child
+  examples: |
+    - My child vomited.
+    - my little daughter keeps vomiting
+    - How to stop a child vomiting?
+    - Can this child stop vomiting?
+    - my baby is vomiting
+    - my child is vomiting and i need to stop it
+
+- intent: vomiting_adult
+  examples: |
+    - my oldest son is vomiting
+    - Stop vomiting for an adult
+    - My mother is vomiting
+    - Teenager vomiting
+    - My uncle keeps vomiting
+    - how do you stop vomiting for an adult 
+
+- intent: ear_injury
+  examples: |
+    - I injured my ear
+    - I think I punctured my ear drums
+    - My ear hurt
+    - ear is bleeding
+    - i am bleeding from my ear
+    - i hurt my ear
+    - i poked my ear and got injured
+    - How to treat an ear injury
+
+- intent: toothache
+  examples: |
+    - My tooth hurts
+    - My tooth is aching
+    - How to stop toothache
+    - she has a toothache
+    - My mouth is hurting
+    - I can't eat with side of my mouth
+    - I think I have a bad tooth
+    - bad toothache 
+    - How to ease toothache
+    - One side of my mouth hurts
+
+- intent: asthma
+  examples: |
+    - Someone around me is having an asthma attack
+    - How do you stop an asthma attack ?
+    - My friend is asthmatic
+    - How do you calm an asthmatic patient?
+    - she can't breathe and i think she has asthma
+    - how to help an asthmatic patient
+    - she is hyperventilating
+    - there is no inhaler and he has asthma
+    - she is not with her inhaler 
+    - Asthma attack
+
+- intent: scorpion_bite
+  examples: |
+    - What do I do if a scorpion bites me?
+    - How to treat a scorpion sting?
+    - A scorpion bit someone, What do I do?
+    - cure for a scorpion sting
+    - What to do if stung by a scorpion
+    - A scorpion bit me
+    - How do you stop a scorpion sting from hurting?
+    - home remedy for a scorion bite
+
+- intent: bee_sting
+  examples: |
+    - A swarm of bees attacked me
+    - A bee stung me
+    - How to treat bee stings?
+    - How to take care of a bee sting ?
+    - cure for a bee sting
+    - what to do for a bee sting swelling
+    - home remedy for a bee sting
+    - i am allergic to bees
+
+- intent: bleeding
+  examples: |
+    - how to stop bleeding
+    - i am bleeding
+    - i can't stop bleeding
+    - first aid remedy for bleeding
+    - how to reduce blood rushing out
+    - i am losing a lot of blood
+    - i got injured and now i am bleeding
+    - bleeding
+    - the blood won't stop
+    - someone is bleeding around me
+
+- intent: bleeding_gum
+  examples: |
+    - Is gum bleeding serious?
+    - How do you stop your gum from bleeding?
+    - What is the home remedy for bleeding gums?
+    - How to stop bleeding gum
+    - My gum is bleeding
+    - blood is coming out of my gum
+    - How can I heal my gums fast?
+    - bleeding gum
+    - my gum hurts and is bleeding
+
+- intent: bleeding_leg
+  examples: |
+    - I am bleeding a lot in my leg
+    - a person hurt his leg and is losing blood
+    - bleeding heavily in the leg
+    - someone hurt her leg and it won't stop bleeding
+    - she is losing blood from her leg injury
+    - i have a bleeding wound on the leg
+    - How to stop excess bleeding in the leg?
+    - I bruised my leg and it is bleeding
+    - I injured my leg 
+    - How to treat a bleeding wound in the leg?
+    - he grazed his leg and he is bleeding
+
+- intent: bleeding_arm
+  examples: |
+    - My arm is bleeding a lot
+    - someone hurt her hand 
+    - How to reduce excess bleeding in the arm ?
+    - I injured my arm and the bleeding is a lot
+    - How to treat a bleeding wound in the arm ?
+    - she bruised her arm and it is bleeding
+    - I have a bleeding arm
+    - How to take care of a bruised arm ?
+    - He is bleeding from a cut on his arm 
+    - I cut my arm and the bleeding won't stop
+    - I bruised my arm
+    - I have a gash in my left arm
+
+- intent: bleeding_palm
+  examples: |
+    - I am bleeding a lot
+    - How to stop excess bleeding in the hand ?
+    - I injured my hand and the bleeding is a lot.
+    - How to treat a bleeding wound in the hand ?
+    - I have a deep cut in my palm
+    - How to reduce bleeding in my palm
+    - she grazed her palm on the ground 
+
+- intent: wound
+  examples: |
+    - How do you treat a wound?
+    - what to do if i get a Wound?
+    - I injured my self, What do I do?
+    - how to treat a deep wound?
+    - i got a deep wound
+    - What to do to a cut ?
+    - How to treat a cut ?
+    - I cut myself
+    - what to apply on a cut?
+    - best way to treat a cut
+    - What is the best thing to put on a cut?
+    - What ointment is good for cuts?
+    - I cut my finger with a knife
+    - I cut my thumb off
+    - deep cut 
+
+- intent: wounds_objects
+  examples: |
+    - A nail pierced through my shoes
+    - I stepped on glass
+    - glass entered my hand 
+    - glass pierced through my leg
+    - An iron rod pierced through my foot
+    - How do you get something out of a wound?
+    - How to treat a puncture wound
+    - something pierced through my foot
+    - What should you do if there is an object inside in a wound?
+    - how to remove an object that entered your foot
+    - removing an object from a wound
+
+- intent: earinjury_objects
+  examples: |
+    - Something flew inside my ear
+    - My child put something into her ear
+    - How to remove an object in the ear?
+    - There is something in my ear
+    - What to do when something is stuck in your ear
+    - How do I get something out of my ear?
+    - What happens if a bead gets stuck in your ear?
+
+- intent: fire
+  examples: |
+    - Someone's clothes caught fire
+    - How to help a burning person
+    - What do I do if someone is on fire ?
+    - How to put out someone on fire
+    - What should I do if someone catches on fire?
+    - Should you throw water on someone on fire?
+    - What should you do if your clothes are on fire?
+    - how to put out a fire on a burning person? 
+    - How to save burning person
+    - My hair is on fire
+
+- intent: jaw_injury
+  examples: |
+    - I dislocated my jaw
+    - I hit my jaw and my mouth is bleeding
+    - Someone punched me and my jaw shifted
+    - How to fix a broken jaw
+    - I got hit in the jaw and it hurts to chew
+    - i have a jaw fracture
+    - What to do if you get hit in the jaw?
+    - What to do about an Injured Jaw
+    - my cousin fell down and broke his jaw
+    - fracture my jaw 
+
+- intent: knockedout_tooth
+  examples: |
+    - I hit my mouth and my tooth fell out
+    - My tooth removed, What do i do?
+    - How to fix a fallen tooth
+    - What to do when tooth gets knocked out?
+    - My tooth fell out
+    - Can a knocked out tooth be saved?
+    - What to do with a knocked out tooth
+    - My tooth is knocked out, What should I do now?
+
+- intent: splinter
+  examples: |
+    - How to remove Splinters
+    - What to do if I have splinters ?
+    - How do you bring a splinter to the surface?
+    - I have a wood stuck in my skin.
+    - What happens if you leave a splinter in your finger?
+    - Will a splinter come out on its own?
+    - how to remove deep splinter
+    - how to draw out a splinter
+
+- intent: swollen_ankle
+  examples: |
+    - How do you treat a swollen ankle?
+    - My ankle is swollen
+    - what to do if i get a sprain?
+    - What is the first aid treatment for swollen ankle?
+    - Which cream to apply if i get a sprain?
+    - I sprained my wrist
+    - I sprained my ankle
+    - my child sprained their ankle , How do I fix it?
+    - How do you fix a sprained ankle?
+    - sprained ankle treatment
+    - How to take care of a sprain
+  
+- intent: muscle_pull
+  examples: |
+    - what is the first aid treatment for strains?
+    - How do you treat a strain?
+    - what to do if i get a strain ?
+    - i strained my muscle
+    - Muscle pull
+    - how to treat a muscle pull
+    - How to take care of a strained muscle?
+    - strain treatment
+    - Is heat or ice better for a pulled muscle ?
+
+- intent: broken_ankle
+  examples: |
+    - What is the fastest way to heal a broken ankle?
+    - How do you strengthen a broken ankle?
+    - Can you walk on a broken ankle?
+    - What is the best pain relief for a broken ankle?
+    - I fractured my ankle
+    - I broke my ankle
+    - How to fix a broken ankle
+    - My ankle is twisted badly
+    - I need to fix my ankle please
+
+- intent: ulcer
+  examples: |
+    - My ulcer pain has started
+    - How to stop ulcer pain
+    - What can I take to relieve ulcer pain?
+    - What is the best food to cure ulcer?
+    - What is the fastest way to cure a stomach ulcer?
+    - I have ulcer pain
+    - stomach ulcer
+    - what is good for stomach ulcer?
+
+- intent: head_injury
+  examples: |
+    - I fell and injured my head
+    - How do i treat a person with head injury?
+    - injured his head 
+    - Someone is bleeding on the head, what should i do?
+    - Treatment for head injury?
+    - how to help a person bleeding on the head?
+    - Treatment for wound on the scalp?
+    - he is bleeding on his face 
+    - hit her head and she is bleeding 
+    - i hurt my head
+
+- intent: head_injury_conscious
+  examples: |
+    - How do i treat a conscious person with head injury?
+    - What do i do to an awake person with head injury?
+    - Someone is bleeding on the head but is awake, what should i do?
+    - Treatment for conscious head injury?
+    - Treatment for a conscious person that hurt their head?
+    - She hurt her head but is awake, What do i do ?
+
+- intent: head_injury_unconscious
+  examples: |
+    - How do i treat a unconscious person with head injury?
+    - What do i do to a person that is not awake with head injury?
+    - Someone is bleeding on the head but is awake, what should i do?
+    - Treatment for unconscious head injury?
+    - Treatment for an unconscious person with a head injury?
+    - he hit his head and he is unconscious
+
+- intent: broken_neck
+  examples: |
+    - How do you move someone with a neck injury?
+    - neck injury
+    - he broke his neck, what do i do
+    - first aid for broken neck
+    - broken neck help
+    - How do you treat a neck injury?
+    - how to assist someone with a broken neck
+
+- intent: broken_neck_unconscious
+  examples: |
+    - someone is unconscious from breaking his neck
+    - What do you do for unconscious person with a neck injury?
+    - What do i do to a person that is not awake with a broken neck?
+    - broke his neck and is unconscious
+    - how to help an unconscious person with broken neck?
+    - fell and broke his neck now he is not awake
+
+- intent: broken_neck_conscious
+  examples: |
+    - How do i treat a conscious person with neck injury?
+    - What do i do to an awake person with neck injury?
+    - Someone broke their neck but is awake, what should i do?
+    - how to help a conscious person with broken neck?
+    - Treatment for a conscious person with a broken neck?
+    - She broke her neck but is awake, What do i do ?
+
+- intent: blocked_nose
+  examples: |
+    - How do you treat a blocked nose ?
+    - Which medicine to take if I have a nose block ?
+    - what to do if i have a blocked nose ?
+    - How long does nose block last?
+    - my nose is stuffy
+    - how to clear a stuffy nose
+    - How can I unblock my nose fast?
+    - my nose hurts 
+
+- intent: cough
+  examples: |
+    - How to cure cough?
+    - How do you treat cough?
+    - what to do if i get a cough?
+    - Which medicine to take if I get cough?
+    - How do you get rid of cough?
+    - I keep coughing
+    - I am coughing
+    - Coughing all day
+    - i can't stop coughing
+
+- intent: sore_throat
+  examples: |
+    - How do you treat sore throat ?
+    - what to do if i get a sore throat ?
+    - Which medicine to take if I get a sore throat ?
+    - How to cure sore throat ?
+    - What is best medicine for sore throat?
+    - how to ease a sore throat?
+    - how to get rid of a sore throat
+
+- intent: stomach_pain
+  examples: |
+    - How do you treat stomach Pain ?
+    - my stomach hurts
+    - Which medicine to take if I get a stomach Pain ?
+    - How to cure stomach Pain ?
+    - Which medicine is best for stomach pain?
+    - How do you get rid of a stomach ache ?
+    - how to get rid of stomach ache
+    - i have stomach ache
+    - Stomach pain
+
+- intent: bruises
+  examples: |
+    - How do you treat Bruises ?
+    - what to do if i get a Bruise?
+    - What can i apply if I get a Bruise?
+    - What makes bruising go away quickly?
+    - how to get rid of bruises
+    - Is it better to put ice or heat on a bruise?
+    - How to cure Bruises ?
+    - I bruised my skin
+
+- intent: broken_toe
+  examples: |
+    - How do you treat a broken toe ?
+    - what to do if i get a broken toe ?
+    - I broke my toe
+    - someone hurt his toe bad, How do you fix it?
+    - he fractured his toe, How do I help?
+    - How to fix a broken toe ?
+
+- intent: diarrhea
+  examples: |
+    - How do you treat Diarrhea?
+    - what to do if i get Diarrhea?
+    - I can't stop stooling
+    - I have been stooling all day
+    - Which medicine to take if I get Diarrhea?
+    - How to cure Diarrhea?
+    - i’m stooling
+    - watery stool all day
+    - should i eat bread for stooling 
+
+- intent: headache
+  examples: |
+    - How do you treat a Headache?
+    - someone is having headache
+    - what to do if i get a Headache?
+    - She has a bad headache
+    - How to take care of an headache
+    - I have an headache
+    - Which medicine to take if I have a headache?
+    - How to cure a headache?
+    - I am having a headache
+    - my head is paining me
+    - my head is hurting
+    - I have a bad headache
+    - How many milligrams of Paracetamol tablet do I take for pain as an adult?
+
+- intent: cold
+  examples: |
+    - How do you treat a Cold ?
+    - what to do if i get a mild Cold ?
+    - I have a cold
+    - Which medicine to take if I have a Cold ?
+    - How to cure Cold ?
+    - how to get rid of a cold fast
+    - remedies for stopping a cold
+    - i keep sneezing 
+
+- intent: rash
+  examples: |
+    - How do you treat a rash?
+    - what to do if i get a Rash?
+    - I have rashes all over my body
+    - Which medicine to take if I have a Rash?
+    - How to cure Rash?
+    - Rash on my skin
+    - how to reduce rashes
+
+- intent: animal_bite
+  examples: |
+    - How do you treat a animal bite?
+    - How do you treat a cat bite?
+    - How do you treat a dog bite?
+    - what to do if i get a animal bite?
+    - Which medicine to take if I get a monekey bite?
+    - I got bit by a dog
+    - treatment for animal bite
+    - a wild animal bit me
+
+- intent: choking
+  examples: |
+    - How do you treat Choking?
+    - what to do if i get a Choke?
+    - What do if I get Choked?
+    - Someone is choking
+    - How to stop Choking?
+    - she is choking badly
+    - how do you stop someone from choking?
+    - I don’t know what she is choking on
+    - he is choking on his food
+
+- intent: electric_shock
+  examples: |
+    - I got electrocuted
+    - Someone got shocked by bare wire
+    - How to help an electrocuted person?
+    - How do you treat an electric shock?
+    - first aid for electric shock
+    - Do you touch an electrocuted person?
+    - he was shocked badly 
+
+- intent: swallowed_objects
+  examples: |
+    - My baby swallowed something and i don't know what it was
+    - My child swallowed a button
+    - How to remove a swallowed object?
+    - first aid for removing swallowed objects
+    - What happens if you swallow an object?
+    - How long does it take to pass a swallowed object?
+    - What do I do if a baby swallows an object
+
+- intent: stroke
+  examples: |
+    - My grandma just had a stroke
+    - How to help a stroke patient
+    - How do you support a stroke patient?
+    - someone is having a stroke
+    - i don't know how to help a stroke patient
+    - how do you stop a stroke?
+    - what helps stroke patients reover
+    - how to spot a stroke
+    - Someone had a stroke around me
+    - How to identify a stroke patient?
+
+- intent: fainting
+  examples: |
+    - Someone fainted around me
+    - How to revive someone that fainted?
+    - Do you pour water on a fainted person
+    - How to wake someone that fainted ?
+    - someone fainted
+    - How do you help someone who has fainted?
+    - what to do when someone faints?
+    - she fainted what do i do now
+
+- intent: seizures
+  examples: |
+    - She is having a seizure
+    - How to stop a seizure
+    - How to help someone having seizure
+    - how to stop a seizure from happening
+    - Stopping seizure
+    - What is the first aid treatment for seizures?
+    - Seizure first aid
+    - How do you control an emergency seizure?
+    - What do you do when someone is having a seizure?
+
+- intent: panic_attack
+  examples: |
+    - Someone is having a panic attack
+    - How to help someone having a panic attack
+    - first aid panic attack paper bag
+    - how to distract yourself during a panic attack
+    - how to divert a panic attack
+    - panic attack treatment without medication
+    - Someone is panicking, what do i do?
+    - How to stop panic attack
+    - Stopping panic attack
+    - Reducing panic attacks
+    - She is hyperventilating
+    - i am about having a panic attack
+
+- intent: heart_attack
+  examples: |
+    - Someone is having an heart attack
+    - What is emergency treatment for heart attack?
+    - Can you stop a heart attack at home
+    - What to do if you think someone is having a heart attack?
+    - My grandad had an heart attack
+    - How to help someone that had an heart attack?
+    - Heart attack
+    - Help with heart attack
+    - How to stop an heart attack
+    - What should I do in a heart attack emergency?
+
+- intent: chemical_poisoning
+  examples: |
+    - my child drank kerosene
+    - What type of first aid will you provide in case of poisoning?
+    - First Aid for Poisonings in a Child
+    - What is the first step in any case of suspected poisoning?
+    - How do you manage a case of poisoning?
+    - she poured petrol all over herself
+    - how do you reduce chemical poisoning
+    - she inhaled insecticide
+    - what do you do for kerosene poisoning
+
+- intent: drowning
+  examples: |
+    - What to do if someone is Drowning?
+    - what to do if someone drowned?
+    - What steps to take if i see a drowning person?
+    - How to help a drowning person?
+    - Do you give CPR to a drowning victim?
+    - Reviving a drowning victim using first aid
+    - first aid for drowning child
+    - how to help someone who was drowning
+    - how to save someone from drowning
+    - someone is drowning
+
+- intent: dislocated_finger
+  examples: |
+    - I broke my finger
+    - My finger is bent
+    - I dislocated my finger
+    - I dislocated my thumb
+    - How to fix a broken finger
+    - Treatments for a broken thumb
+    - how to re-adjust my broken finger
+    - Broken thumb
+
+- intent: dislocated_shoulder
+  examples: |
+    - I shifted my shoulder
+    - I dislocated my shoulder
+    - How to fix a dislocated shoulder
+    - My shoulder is broken
+    - shoulder dislocation
+    - how to push dislocated shoulder back
+    - i broke my shoulder
+    - first aid for broken shoulder
+
+- intent: dislocated_knee
+  examples: |
+    - I broke my knee cap
+    - I dislocated my knee
+    - my child broke their knee cap, How do you fix it?
+    - I fell and broke my knee
+    - How to fix a broken knee
+    - Someone fractured their knee
+    - How to fix a fractured knee
+    - a child sprained his knee ,How do you repair it?
+    - i fell and broke my knee
+    - Fixing a knee fracture?
+    - i can't walk because i injured my knee
+    - How to take care of a broken knee
+    - joy injured my knee
+
+- intent: broken_arm
+  examples: |
+    - my baby fractured his arm, how do you fix it?
+    - she fell and broke her arm, what do I do?
+    - They broke their arm ,How do I re-adjust it?
+    - I broke my arm
+    - I dislocated my arm
+    - someone broke his hand
+    - she broke her arm and losing blood
+    - I fell and broke my arm
+    - someone broke her hand ,How do you re-adjust it?
+    - How to fix a broken arm
+    - an adult fractured their hand, How do you repair it?
+    - How to take care of a broken arm
+    - I have just broken my arm
+
+- intent: broken_leg
+  examples: |
+    - I dislocated my leg
+    - I fell and broke my leg
+    - How to fix a broken leg
+    - a child fractured his leg ,How do you repair it?
+    - a person wounded his leg and is losing blood
+    - How to take care of a broken leg
+    - my leg is broken
+    - i broke my leg
+    - leg fracture
+    - broken leg 
+
+- intent: sling
+  examples: |
+    - How do you make a sling
+    - Sling for fractures
+    - Make a sling for broken bones
+    - how to make a sling at home
+    - Using a sling for broken bone
+    - make a ling
+    - How do you make a homemade sling?
+    - How do you make an arm sling out of a scarf?
+    - How do you make a sling out of a shirt?
+
+- intent: splint
+  examples: |
+    - make a splint
+    - How do you make a splint
+    - Splinting for fractures
+    - Make a splint for broken bones
+    - Using a splint for broken bone
+    - i need to make a splint
+    - What do you need for a splint?
+    - What would be a good alternative to be used as a splint?
+    - how to make a splint at home
+    - then i need to make a splint
+
+- intent: cpr
+  examples: |
+    - how to perform cpr 
+    - how to do cpr
+    - cpr
+    - cpr procedures
+    - i need to do a cpr
+    - cpr process
+    - cpr for someone unconscious
+    - she is not breathing
+    - she has no pulse
+
+- intent: cpr_baby
+  examples: |
+    - I need to perform cpr on my baby
+    - My baby is not breathing
+    - cpr for a baby
+    - My baby is unconscious
+    - cpr on a small baby
+    - How to perform cpr on a baby?
+
+- intent: cpr_kid
+  examples: |
+    - I need to perform cpr on my child
+    - My child is not breathing
+    - cpr for a child
+    - cpr on a small child
+    - My young boy needs cpr
+    - My kid is unconscious
+    - How to perform cpr on a child?
+
+- intent: cpr_adult
+  examples: |
+    - Someone needs cpr
+    - The man is not breathing
+    - I need to perform cpr on an adult
+    - How to perform cpr on an adult?
+    - The woman is unconscious
+    - I need to do cpr
+    - Basic life support for adults
+    - Can you teach people at home how to apply CPR for an unresponsive adult?
+
+- intent: out_of_scope
+  examples: |
+    - that's not what I want
+    - This is not the right thing
+    - wrong injury
+    - wait stop
+    - you're no help
+    - this is no help at all
+    - how old are you
+    - I want to order a pizza
+    - tell me the weather
+    - this isn't working
+    - I already told you that
+    - don't like that
+    - I don't want to tell you that
+    - none of your business
+    - that's not right
+    - stop asking
+    - nevermind
+    - I want to do something else
+    - I changed my mind
+    - 4-2 is what?
+    - How do l get to Ikeja?
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you please?
+    - how do i trust your word? 
+    - are you a verified doctor?
+    - can you really help me?
+    - how do i know you are right?
+    - Thanks for introducing to us whom you are and what you do
+
+- intent: hospital 
+  examples: |
+    - call a doctor
+    - i need a doctor
+    - she is not still responding
+    - the person is still inresponsive 
+    - i don't think it worked 
+    - it didn't work
+    - it didn't help
+    - it got worse
+    - i think i made it worse 
+    - i can't do it
+    - can't a doctor do it instead?

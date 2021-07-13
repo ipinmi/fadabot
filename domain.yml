@@ -1,0 +1,610 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - thankyou
+  - affirm
+  - deny
+  - mood_better
+  - help
+  - mood_injured 
+  - burn 
+  - food_poisoning
+  - nosebleed
+  - vomiting
+  - vomiting_child
+  - vomiting_adult 
+  - ear_injury
+  - toothache
+  - asthma 
+  - scorpion_bite
+  - bee_sting
+  - bleeding
+  - bleeding_gum
+  - bleeding_leg
+  - bleeding_arm
+  - bleeding_palm
+  - wound 
+  - wound_objects
+  - earinjury_objects
+  - fire
+  - jaw_injury
+  - knockedout_tooth
+  - splinter 
+  - swollen_ankle
+  - muscle_pull
+  - broken_ankle
+  - ulcer
+  - head_injury
+  - head_injury_conscious
+  - head_injury_unconscious
+  - broken_neck
+  - broken_neck_conscious
+  - broken_neck_unconscious
+  - blocked_nose
+  - cough
+  - sore_throat
+  - stomach_pain
+  - bruises
+  - broken_toe
+  - diarrhea
+  - headache
+  - cold 
+  - rash
+  - animal_bite
+  - choking
+  - electric_shock
+  - swallowed_objects
+  - stroke
+  - fainting
+  - seizures
+  - panic_attack
+  - heart_attack
+  - chemical_poisoning
+  - drowning
+  - dislocated_finger
+  - dislocated_shoulder
+  - dislocated_knee
+  - broken_arm
+  - broken_leg
+  - sling 
+  - splint
+  - cpr
+  - cpr_baby
+  - cpr_kid
+  - cpr_adult
+  - out_of_scope
+  - hospital
+  - bot_challenge
+
+responses:
+  utter_greet:
+  - text: Hi, I am a first-aid bot. What can I help you with?
+  - text: Hi, I am here to guide you through first-aid procedures. What is your emergency?
+  - text: Hi, What is going on?
+  utter_type:
+  - text: What happened?
+  - text: What can I do for you?
+  - text: What is wrong?
+  - text: Remember to stay calm, What is happening?
+  utter_vomiting:
+  - text: Who is vomiting? 
+    buttons:
+    - payload: /vomiting_adult
+      title: Adult
+    - payload: /vomiting_child
+      title: Child
+  utter_cpr:
+  - text: If the victim is not breathing, select age range of the person 
+    buttons:
+    - payload: /cpr_baby
+      title: Baby
+    - payload: /cpr_kid
+      title: Kid
+    - payload: /cpr_adult
+      title: Adult
+  utter_bleeding:
+  - text: Where are you bleeding exactly?
+    buttons:
+    - payload: /bleeding_leg
+      title: Leg
+    - payload: /bleeding_arm
+      title: Arm
+    - payload: /bleeding_palm
+      title: Palm
+    - payload: /bleeding_gum
+      title: Gum
+  utter_cpr_baby:
+  - image: https://res.cloudinary.com/dlgzx9bwa/image/upload/v1623965842/cpr-baby_i5ekur.gif
+    text: 
+      1) Check if baby is unconscious by flicking his feet.
+      2) Place baby on their back with their head in a neutral position 
+      3) Check baby’s mouth for airway blockages like the tongue, food, vomit or blood. If there’s a blockage, use your little finger to clear it.  
+      4) If there are no blockages or you’ve cleared blockages, check for breathing. Look for chest movements, listen for breathing sounds, or feel for breath on your cheek. 
+      a) Baby breathing normally? Place baby in your arm on their side with their head tilted down. Supporting their neck with your hand 
+      b) Baby not responding or baby breathing abnormally? Start CPR. 
+      5) Put two fingers in the centre of baby’s chest. Do 100 compressions within a minute. Each compression should push the chest down by about one third. 
+      6) Tilt the head back and lift the chin up. Make a complete seal over baby’s nose and mouth with your mouth, and blow in for about one second. That’s one rescue breath; do two, in quick succession. 
+      7) If baby starts breathing normally and responding, put baby into the recovery position. Keep watching baby’s breathing.
+  utter_cpr_kid:
+  - image: https://res.cloudinary.com/dlgzx9bwa/image/upload/v1623965844/cpr_child_iuxif9.png
+    text:
+      1) Remove the child and yourself from any danger 
+      2) Check the child for a response. Ask them to open their eyes or squeeze your hand. Squeeze their shoulders.
+      3) Call for an ambulance if they are unconscious.
+      4) Check the child’s mouth for airway blockages like the tongue, food, vomit or blood. If there’s a blockage, roll the child onto their side, keeping their top leg bent. This is the recovery position.
+      Clear blockages with your fingers, then check for breathing.
+      5) If there are no blockages or you’ve cleared blockages, check for breathing. Look for chest movements, listen for breathing sounds, or feel for breath on your cheek.
+      a) Child breathing normally? Gently roll the child into the recovery position on their side. Regularly check for breathing until the ambulance arrives
+      b) Child not responding or child breathing abnormally? Start CPR.
+      6) Place the heel of one hand on the center of the chest, then place the heel of the other hand on top of the first hand, and lace your fingers together. Do 30 compressions at a rate of 2 compressions per second.
+      7) With the head tilted back slightly and the chin lifted, pinch the child's nose shut, make a complete seal by placing your mouth over the child's mouth and breathe into the child's mouth twice.
+  utter_cpr_adult:
+  - image: https://res.cloudinary.com/dlgzx9bwa/image/upload/v1623883244/cpr_thxxui.jpg
+    text: 
+      1) Ensure that the patient is on a firm surface. Place the patient on their back and kneel beside the patient’s chest. Locate the lower half of the breastbone in the center of the chest.
+      2)  Place the heel of one hand on the lower half of the breastbone and the heel of the other hand on top of the first hand. Interlock the fingers of your hands and raise your fingers.
+      3) Position yourself vertically above the patient’s chest. Ensure that your arms are straight then press down on the patient’s chest until it is compressed by about one-third.
+      4) Release the pressure. Pressing down and releasing is 1 compression. Give 30 compressions followed by 2 breaths. Compressions should be done at a rate of two compressions per second. At least 5 sets of 30 compressions and 2 breaths should be achieved in two minutes and interruptions should be minimized as much as possible.
+      6) CPR should be continued until the patient starts breathing normally, you are physically unable to continue, more qualified help arrives and takes over or a healthcare professional directs that CPR be ceased.
+      7) Keep in mind that any attempt at resuscitation is better than no attempt at all. Giving only compressions is better than nothing at all.
+  utter_recovery_position:
+  - image: https://res.cloudinary.com/dlgzx9bwa/image/upload/v1623883245/recovery_position_w0borp.jpg
+    text: 
+      1) Lay the victim on the back and place the right arm palm up in an outward position. Place the left palm on the right cheek
+      2) Carefully, hold the left shoulder and reach across the left leg and grasp the outer thigh near the knee to roll them towards you.
+      3) Pull the knee up to prevent them from rolling back
+      4) Check the airway for normal breathing by placing your face or hand in front of the patient's mouth
+      5) Then, open the mouth to allow fluids drain out.
+  utter_burn:
+  - text: 
+      1) Run cool (not cold) water over the burn area for 10-15 minutes
+      2) Use a cold compress or clean wet cloth if running water is not available.
+      3)Apply a petroleum-based ointment (Vaseline), or Aloe vera or Honey over the burn two to three times per day.
+      4) Do not apply butter, oil, lotions, or creams (especially if they contain fragrance).
+      5) See a doctor if there are signs of infection like oozing, swelling, fever, increased pain. 
+  utter_food_poisoning:
+  - text: 
+      1) Mix 1 tablespoon (15 ml) each of apple cider vinegar and honey into 1 cup (240 ml) of warm water and drink. Repeat every 2 to 3 hours.
+      2)Alternatively, drink plenty of liquids preferably with oral rehydration salts (ORS) to replace lost electrolytes.
+      3) Avoid fatty, sugary, or spicy foods, dairy products, caffeine, and alcohol. 
+      4)Seek immediate medical attention if there is blood in the stool, severe dehydration and nausea, vomiting, or diarrhea persists for longer than 3 days.
+  utter_nosebleed:
+  - text: 
+      1) First, loosen any clothing around the neck.
+      2)Ask the person to sit down and lean forward. Then lower the head with the mouth open.
+      3)Try to stop the bleeding by pinching the soft part of the nostril closed by pressing with the thumb and index finger, below the cartilage, for at least 10 minutes.
+      4) Release the pressure slowly.
+      5) Drinking plain cold water can help stop a nosebleed.
+      6) Seek immediate medical attention if Blood flows from both nostrils and doesn’t stop for 20 minutes, the nosebleed has occurred after a head injury, the indiviual is elderly or has high blood pressure.
+  utter_vomiting_child:
+  - text: 
+      1) Don’t feed milk products or solid foods to a child who has been vomiting. 
+      2) Give small amounts of liquid 1–2 tbsp. every 15 minutes of ORS, ice chips, or diluted juice. If the child vomits again, wait 20–30 minutes and start over.
+      3) Slowly increase the amount of liquids once there’s no vomiting for 3–4 hours.
+      4) After 8 hours without vomiting serve bland foods (rice, toast, cereal, crackers) 5) Go back to a regular diet after 24 hours without vomiting.
+  utter_vomiting_adult:
+  - text: 
+      1) Drink gradually larger amounts of clear liquids and avoid solid food. 
+      2) Try drinking peppermint or ginger tea.
+      3) Eat saltine crackers, plain bread, and other bland foods. 
+  utter_ear_injury:
+  - text: 
+       1) Elevate the victim’s head from the chin.
+       2) If the ear drums have been punctured, place a clean piece of gauze in the outer ear to provide protection. DO NOT clean the ear or stop any fluid from leaking out.
+       3) Place the person on thier injured side to allow fluid to drain.
+       Place a small pillow under the head and shoulders. 
+  utter_toothache:
+  - text: 
+      Try any of these methods.
+      1) Mix 1 teaspoon (tsp) of salt into a glass of warm water and use it as a mouthwash.
+      2) Hold a towel-wrapped bag of ice to the affected area for 20 minutes at a time.
+      3) Crush a clove to create a sticky paste and apply it to the affected area. 
+  utter_asthma:
+  - text: 
+      1) Sit the person in a quiet, warm place, away from other people and leaning on a table.
+      2) Give the person one puff with the inhaler, then 4 breaths through the spacer (kids usually use the spacer), repeat 4 times. Wait 4 minutes, then if there is no improvement give 4 more puffs.
+      3)If there is still no improvement or the person’s condition suddenly deteriorates, call an ambulance immediately.
+      4) While waiting for medical help to arrive, continue to administer the puffer as described. 
+      5) if they have severe breathing difficulties, especially if there is a blue tinge around the lips or the inhaler isn't having an effect, call an ambulance.
+  utter_bleeding_gum:
+  - text: 
+      1) Apply an ice pack to your gums several times a day, 10 minutes on and 10 minutes off.
+      2) Mix 1 teaspoon (tsp) of salt into a glass of warm water and use it as a mouthwash.
+      3) See a dentist if gum bleeding doesn’t improve within 7 to 10 days.
+      NOTE the following. a) Avoid brushing too vigorously
+      b) brush your teeth at least twice daily and floss once a day.
+      c) Eat foods rich in vitamin C. 
+  utter_scorpion_bites:
+  - text: 
+      1) Wash the wound with soap and water.
+      2) Apply a cool compress or a wet washcloth for 10 minutes on and off.
+      3) Another option is to cut an onion in half and apply it to your scorpion sting site.
+      4) Seek immediate medical attention if there are signs of nausea, fever, dizziness, skin rash, or breathing difficulty.
+  utter_bee_stings:
+  - text: 
+      1) Remove the stringer by scraping over it in the opposite direction from which it entered, by using your fingernail, or the back of a knife, or the edge of a credit card.
+      2) Do not use TWEEZERS as it may squeeze the venom sac and release more venom into the wound.
+      3) Then wash the area with soap and water.
+      4) Apply a cold compress or cut a fresh slice of onions and place over the wound.
+      5) Go to the emergency room if the swelling moves to other parts of your body or you have difficulty breathing, dizziness, hives, as you might be having an allergic reaction. 
+  utter_bleeding_leg:
+  - image: https://res.cloudinary.com/dlgzx9bwa/image/upload/v1623883244/leg_bleeding_uazdof.png
+    text: 
+      To stop bleeding in the legs,
+      1)have the injured person lie flat on his or her back.
+      2)Press the heel of your hand on the femoral artery as it crosses the crease between the thigh and groin. 
+  utter_bleeding_arm:
+  - image: https://res.cloudinary.com/dlgzx9bwa/image/upload/v1623883244/arm_bleeding_kek6eh.png
+    text: 
+      1) Hold the limb up at a right angle to the body.
+      2 ) Grasp the arm firmly with the thumb on the outside and the remaining fingers firmly on the inside of the upper arm, over the brachial artery. 
+  utter_bleeding_palm:
+  - text: 
+      1) Grip a sterile bandage or clean cloth firmly on the wound to control bleeding.
+      2) Apply constant pressure until the bleeding stops.
+      3) Maintain pressure by binding the wound with a thick bandage or a piece of clean cloth.
+      4) Take a bandage around the hand, down over the fist and around and over the thumb and end of the bandage. Continue bandaging in this way.
+  utter_wound:
+  - text: 
+      1) Wash your hands.
+      2) Check to see that nothing is left in the wound.
+      3) Allow the wound to bleed freely, but if bleeding is heavy or squirting out, apply pressure with a clean cloth until it stops.
+      4) Flush the wound with clean water and soap for 5-10 minutes.
+      5) If there is debris in the wound, disinfect some tweezers with rubbing alcohol and use them to remove as much as possible.
+      6) Apply the antibiotic ointment with a clean swab and dress the wound with a clean bandage.
+      NOTE. Seek emergency medical attention if the wound is in the head, close to or in the eye, chest, or abdomen, the wound is infected after a while, the wound has part of an object remaining in it, such as a pencil tip, nail, or piece of glass, dirt remains in the wound. 
+  utter_wounds_objects:
+  - text: 
+      1) Raise the wounded area above the heart to help reduce bleeding.
+      2) Do not remove the object.
+      Cover the wound around the object with a clean cloth.
+      3) Do not apply pressure to the injury site.
+      4) Go to the emergency room 
+  utter_fire:
+  - text: 
+      Stop! Drop! Roll! is the fastest way to smother the flames. If you see someone running from a fire wearing burning clothes.
+      1) stop the person and throw them to the ground, burning side up.
+      2) Beat the flames downward, away from the head.
+      3) Use water to douse the flames or smother the fire with a blanket, rug or coat but only after the person is on the ground.
+      4) AVOID using a fire extinguisher, as it contains chemicals.
+      5) After the fire is out, do not try to remove clothing stuck on the skin. GET MEDICAL ASSISTANCE. 
+  utter_earinjury_objects:
+  - text: 
+      1) If the item is very small you can try to gently shake it out. Pulling the back of the ear (the pinna) gently toward the back of the head straightens out the ear canal and the foreign body may roll or slide out with a gentle shake of the ear.
+      2) Don't hit your head on the opposite side to try to remove the stuck item.
+      3) Don't use cotton swab as it may push the object farther in.
+      4) If it is an insect, tilt the person's head so that the ear with the insect is upward. Try to float the insect out by pouring mineral oil, olive oil or baby oil into the ear. 
+  utter_jaw_injury:
+  - image: https://res.cloudinary.com/dlgzx9bwa/image/upload/v1623887208/jaw_injury_ttmkzp.jpg
+    text: 
+      1) Do not attempt to align the jaws.
+      2) Allow any blood in the mouth to dribble out or have the person spit it into a handkerchief.
+      3) Make a bandage out of a handkerchief, scarf, or necktie, and tie it around the jaw and over the top of the head to keep the jaw from moving.
+      4) Apply ice compress to reduce bleeding and swelling.
+  utter_knockedout_tooth:
+  - text: 
+      1) Rinse the tooth with salt water. DO NOT RUB
+      2) Store the tooth in salt water
+      3) DON'T touch the root of the mouth
+      4) See the dentist immediately 
+  utter_splinter:
+  - text:  
+      1) SOAK IT IN EPSOM SALTS. Dissolve a cup of the salts into a warm bath and soak whatever part of the body has the splinter. Failing that, you can also put some of the salts onto a bandage pad and leave it covered for a day; this will eventually help bring the splinter to the surface.
+      2) VINEGAR OR OIL. Another simple way to draw out that stubborn splinter is to soak the affected area in oil (olive or corn) or white vinegar. Just pour some in a bowl and soak the area for around 20 to 30 minutes. 
+  utter_swollen_ankle:
+  - text:  
+      1) Use an ice pack or ice slush bath immediately for 15 to 20 minutes and repeat every two to three hours while you're awake.
+      2) To help stop swelling, compress the ankle with an elastic bandage until the swelling stops.
+      3) In most cases, pain relievers are enough to manage the pain of a sprained ankle.
+  utter_muscle_pull:
+  - text:  
+      1) Rest, Ice, Compression and Elevation can be used to cure strains.
+      2) Avoid using your muscle for a few days, especially if movement causes an increase in pain 
+      3) Apply ice immediately after injuring your muscle. This will minimize swelling. Don’t put ice directly on your skin. Use an ice pack or wrap ice in a towel.
+      4) To reduce swelling, wrap the affected area with an elastic bandage until swelling comes down. 
+  utter_fever:
+  - text:  
+       To treat a fever at home.
+       1)Drink plenty of fluids to stay hydrated.
+       2)Dress in lightweight clothing.
+       3)Use a light blanket if you feel chilled, until the chills end.
+       4)Take a pain reliever, if needed.
+       5) Get medical help if the fever lasts more than five days in a row. 
+  utter_blocked_nose:
+  - text:  
+      When you’re stuffed up, focus on keeping your nasal passages and sinuses moist. To keep your nasal passages moist, you can
+      1)Use a humidifier or vaporizer.
+      2)Drink lots of fluids. This will thin out your mucus, which could help prevent blocked sinuses.
+      3)Place a warm, wet towel on your face. It may relieve discomfort and open your nasal passages.
+  utter_cough:
+  - text: 
+      1) Honey:- Use honey to treat a cough, mix 2 teaspoons (tsp) with warm water or an herbal tea. Drink this mixture once or twice a day.
+      Do not give honey to children under 1 year of age.
+      2) Brew up a soothing ginger tea by adding fresh ginger slices to a cup of hot water. Allow to steep for a few minutes before drinking.
+      Add honey or lemon juice to improve the taste and further soothe the cough.
+      3) Fluids. Staying hydrated is vital for those with a cough or cold. Research indicates that drinking liquids at room temperature can alleviate a cough, runny nose, and sneezing.
+  utter_sore_throat:
+  - text:  
+      1) Make sure you get plenty of rest and drink a lot of fluids.
+      2) Inhale steam, Run hot water in a sink. Drape a towel over you to trap the steam, and have the person lean over the sink with the water running.  Tell him to breathe deeply through his mouth and nose for 5 to 10 minutes. Repeat several times a day.
+      3) Have the person sip chicken broth or warm tea with honey.Don’t give honey to a child under 12 months of age.
+  utter_stomach_pain:
+  - text:  
+      1) Provide clear fluids to sip, such as water, broth, or fruit juice diluted with water.
+      2) Serve bland foods, such as saltine crackers, plain bread, dry toast, rice, gelatin, or applesauce.
+      3) Avoid spicy or greasy foods and caffeinated or carbonated drinks until 48 hours after all symptoms have gone away. 
+  utter_bruises:
+  - text:  
+      1)Ice the bruise with an ice pack wrapped in a towel.
+      2)Leave it in place for 10 to 20 minutes.
+      3)Repeat several times a day for a day or two as needed.
+      4)Compress the bruised area if it is swelling, using an elastic bandage. 
+  utter_broken_toe:
+  - text:  
+      1) To help decrease pain and swelling in a broken toe, elevate the foot, ice the injury, and stay off the foot.
+      2) Depending on the severity of the fracture, the toe may need to be put back into place (reduced), and some compound toe fractures may require surgery.
+      3) Most broken toes heal without complications in six weeks. 
+  utter_diarrhea:
+  - text:  
+      1) Hydrating the body is essential for recovering from diarrhea. This causes the body to lose electrolytes such as sodium and chloride.
+      2) It is highly recommended to avoid dairy products, as they may worsen diarrhea in some people.
+      3) However, if diarrhea lasts for more than 2 days, seek medical advice to avoid complications. 
+  utter_headache:
+  - text:  
+      1) Lie down in a dark, quiet room.
+      2) Drink a lot of fluids.
+      3) Put a cool, moist cloth across the forehead or eyes.
+      4) Give ibuprofen (Advil, Motrin), aspirin, or acetaminophen (Tylenol) for pain. Avoid ibuprofen and other NSAIDs if the person has heart failure or kidney failure. Do not give aspirin to a child under age 18.
+  utter_cold:
+  - text:  
+      1) Keeping hydrated is absolutely vital to help 'flush' out the cold, as well as to break down congestion and keep your throat lubricated.
+      2) Vitamin C is extremely helpful when fighting infection, so at the first sign of a cold be sure to increase your intake by eating plenty of berries, citrus fruits, papayas, & broccoli which will help keep you protected.
+      3) When it comes to combating a cold,Vitamin D is essential in helping to regulate immune response. 
+  utter_rash:
+  - text:  
+      1)Olive oil helps in healing and promotes skin renewal given it is packed with vitamin E and antioxidants. It also soothes the skin and reduces itching.
+      2)Baking soda is useful in drying skin rashes as also in relieving itching and inflammation.
+      3)Apply Aloe Vera. Thanks to its antibacterial, antifungal, anti-inflammatory and emollient properties, aloe vera is excellent for treating a number of skin ailments including rashes as also soothing the skin. 
+  utter_animal_bite:
+  - text:  
+      1) Wash the wound with soap and warm water.
+      2)Gently press a clean cloth over the wound to stop the flow of blood.
+      3)Apply an antibacterial ointment to the wound.
+      4)Cover with a sterile bandage.
+      5)Watch for signs of infection. Seek help if you suspect infection or possible exposure to rabies, or if the wound is severe.
+  utter_choking:
+  - text:  
+      Ask if the person can still speak or cough. If yes, allow or aid the person to cough out the blockage.
+      1) If no, Give 5 abdominal thrusts. stand behind them and put your arms around their waist.
+      a) Place one hand in a clenched fist above their belly button.
+      b) With your other hand, Put the other hand on top of your fist and pull sharply inwards and upwards up to five times.
+      2) FOR PREGNANT AND OBESE PERSONS, do chest thrusts instead.
+      a) Either sitting or standing, wrap both arms around the patient at chest level.
+      b) Place one fist with the thumb side against the middle of the breastbone. 
+      c) Grasp that fist with your other hand and give up to 5 separate, inward and upward thrusts.
+  utter_electric_shock:
+  - text:  
+      1) Seek immediate medical attention! Turn off the source of electricity carefully and do not TOUCH the victim until the current is broken.
+      2)Before you pull the victim away from whatever caused the shock, make sure you are standing on something insulated and dry such as a thick book, rubber mat, blanket, newspaper, or wooden box.
+      3) If you’re not sure whether or not the circuit is broken, use a long, nonconducting item like a stick, branch, dry rope, towel, or anything else that isn’t metallic 
+      4)If the victim is not breathing, perform cpr before the emergency team arrives.
+  utter_swallowed_objects:
+  - text:  
+      1) Take the child to the doctor right away.
+      2) If the child is coughing, monitor the situation, but don’t interfere.
+      3) Don’t try to stick a finger down your child’s throat.
+      4) If the child is not coughing, start the five-and-five approach. Give five pats on the back. Follow the pats with five Heimlich abdominal thrusts.
+  utter_stroke:
+  - image: https://res.cloudinary.com/dlgzx9bwa/image/upload/v1623965842/fast-stroke_i2wlff.jpg
+    text:  
+      Identify a stroke victim using FACT procedure. After, Call the emergency line.
+      If conscious. 1) Lay them on their side with their head and shoulders slightly raised and supported with a pillow or item of clothing. Avoid unncessary movement.
+      2)Loosen any tight clothing and keep them cool by fanning or cold compresses to the wrist
+      3) Do not give them any food or liquids.
+      If unconscious,  Place them in recovery position. 
+  utter_fainting:
+  - text:  
+      1) Place the person in the recovery postion.
+      2)If the victim is not breathing, perform CPR before the emergency team arrives.
+      3) Seek immediate medical attention if the person does not gain consciousness within 5 minutes or has an underlying health condition. 
+  utter_seizures:
+  - text: 
+      1) Help the victim lie on the floor, and clear a space around them. Place something soft under the head as a cushion. Loosen clothing and remove glasses. 
+      2) Turn the person onto their side if they are not awake and aware. 
+      3) Time the seizures and take note of what happened. 
+      4) Seek medical attention immediately if seizures last longer than 5 minutes 
+      5) DO NOT do the following. Hold the person down or try to stop their movements. DO NOT Try to give mouth-to-mouth breaths (like CPR). DON'T put anything in the person’s mouth as this can cause injury to teeth or the jaw. 
+      6) Offer the person water or food until he or she is fully alert. 
+  utter_panic_attack:
+  - text:  
+      1) Take deep breaths calmy and slowly, concentrating on each breath.
+      2) Try to find a more peaceful spot.
+      3) Try the 5-4-3-2-1 grounding method.
+      Look at 5 separate objects, Touch 4 things, notice 3 sounds you can hear, two things you can smell, and one thing you can taste(you can try tasting something).
+      3) Also, try these calming techniques, gently press or rub the space between the eyebrows in the center of the forehead.
+      Apply firm pressure to the center of the left palm with the right hand for 1 minute.
+  utter_heart_attack:
+  - text:  
+      1) Call the emergency number if the victim has the following symptoms.
+      a) loss of consciousnes
+      b) rushing chest pain
+      c) heartburn
+      d) shortness of breath
+      e) heavy sweating
+      f) discomfort in the back, jaw, throat, or arm.
+      2) Have the victim sit down.
+      3) If the victim has a prescribed medication, help the person take it. Else, offer the person an aspirin tablet to chew slowly as it reduces blood clotting.
+      4)Begin cpr if the person is unconscious. 
+  utter_chemical_poisoning:
+  - text:  
+      1) DO NOT make the person vomit & DON'T reach for Palm oil to induce vomiting.
+      2) Seek immediate medical attention!
+      3) If the poison is SWALLOWED. Remove anything remaining in the person’s mouth. Then give small sips of milk or water immediately before the person is taken to the hospital. And if the suspected poison is a household cleaner or other chemical, read the container’s label and follow instructions for accidental poisoning.
+      4) If the Poison is ON THE SKIN Remove any contaminated clothing using gloves. Rinse the skin for at least 15 minutes in a shower with lukewarm water.
+      5) If the Poison is IN THE EYE Gently flush the eye with lukewarm water for 20 minutes. 
+      Let the water hit the bridge of the nose and gently run into the eyes rather than pouring the water directly into the eye.
+      6) If the Poison is INHALED. Get the person into fresh air as soon as possible
+      7) If the person becomes unresponsive, check Airway and Breathing and place them in the recovery position.
+      8) If the person stops breathing, start CPR.
+  utter_dislocated_finger:
+  - text: 
+      Ensure to see a doctor as soon as you can.
+      1) Remove any jewelry from your dislocated finger
+      2) Apply an ice pack to your dislocated finger to reduce swelling.
+      3) With the ice wrapped around your finger, raise your injured hand above the level of your heart to avoid blood pooling.
+      Find something to prop your hand on so you don't exhaust your muscles. 
+  utter_dislocated_shoulder:
+  - text: 
+      1) Get medical help immediately
+      2) Don't try to move a dislocated joint or force it back into place
+      3) Make a sling
+  utter_dislocated_knee:
+  - image: https://res.cloudinary.com/dlgzx9bwa/image/upload/v1623883244/knee_fracture_nvirwh.jpg
+    text: 
+      1) Go to the Emergency Room
+      2) Ice the area to control swelling
+      3) Immobilize Dislocation by creating a splint 
+      a) You will need two rigid objects(e.g wood), padding, and small pieces of clothes (e.g handkerchiefs). The rigid objects should extend from the casualty's ankle to approximately half way up his thigh.
+      b) Position one handkerchief above the knee, one handkerchief below the knee, and one handkerchief beneath the ankle.
+      c) Place towels or clothes on the inside of the rigid objects.
+      d) Place one padded rigid object on the inside of the injured leg and the other on the outside.
+      Do not attempt to straighten the knee.
+      e) Wrap the handkerchief tightly around the rigid objects so they immobilize. 
+  utter_broken_leg:
+  - image: https://res.cloudinary.com/dlgzx9bwa/image/upload/v1623883244/leg_splint_v36kwu.jpg
+    text: 
+      1) Keep their ankle and their knee with your splint.
+      2) Place to the left and right of the lower leg.
+      3) Get medical assitance. 
+  utter_broken_arm:
+  - image: https://res.cloudinary.com/dlgzx9bwa/image/upload/v1623883244/arm_splint_rd7oqr.jpg
+    text: 
+      1) If the victim can comfortably hold a broken arm across the chest, apply a splint and hold it in this position with a sling.
+      2) If the arm cannot be bent, splint it in the straight position and secure it to the side of the body.
+      3) For the FOREARM, a forearm, place the rigid support item under the forearm. Then, tie or tape it to the arm just below the wrist and above the elbow. 
+  utter_drowning:
+  - text: 
+      Check for breathing. Tilt their head back and lift the chin. Then look, listen and feel for breaths. 
+      If the individual is not breathing, begin cpr. 
+      CPR for 1) For BABIES. Place your mouth over infant's nose and lips and give two breaths, each lasting about 1 second 
+      2) For CHILDREN.
+      a) Pinch child's nose and seal your lips over her mouth. Give two slow, full breaths (1 to 2 seconds each).
+      b) Wait for the chest to rise and fall before giving the second breath.
+      3) For Adults. a) Lie them on their back and tilt their chin and head backwards to help clear their airway.
+      b)Give them 5 rescue breaths. Pinch their nose and keep their head tilted back as you breathe into their mouth from yours, making a seal as you can with your mouth over theirs.
+      c) Each breath you give them should last 1 second, and make sure that you take a good deep breath yourself in between each one.
+      d) Using both hands together, one on top of the other, push down right in the centre of their chest firmly, with your arms straight.
+      Do this for 1 minute (120 compressions).
+      e) call the emergency services.
+      f) 30 chest compressions followed by 2 rescue breaths over and over again until they start breathing normally or help arrives (if there’s more than one of you then take it in turns).
+  utter_sling:
+  - image: https://res.cloudinary.com/dlgzx9bwa/image/upload/v1623883244/sling_leonul.jpg
+    text: 
+      To make a sling. a) Find a suitably-sized square of cloth.
+      b) Fold the fabric of the cloth across itself diagonally to form a triangle
+      c) Clean and dress any wounds before wearing the sling.
+      d)slide the triangular bandage underneath the arm. Bring the top end of the bandage around the back of the neck.
+      e)Fold the lower end of the bandage up over the forearm to meet the top of the bandage at the shoulder of the injured side.
+      f)Tie the two ends of the bandage together in a knot
+      g) Adjust the sling so that it supports their arm all the way to the end of their little finger.
+      h) If the fingers turn pale or too red, adjust the sling or the bandage. 
+  utter_splint:
+  - text: 
+      DO NOT move the injured patient. 
+      1) Splints can be made from any stiff object, such as cardboard, plastic, thin wood or a rolled-up newspaper.
+      2) If you are using a stick or board, pad it well by wrapping it in cloth.
+      3) To fasten the homemade splint in place, you can use shoelaces, belts, ropes, and strips of cloth will work as cavats.
+      4) Stop the bleeding by putting pressure directly on the wound before you attempt to place the splint.
+      5) Place one splint on each side of the arm or leg. Make sure that the splints reach, if possible, beyond the joints above and below the fracture.
+      6) Tie the splints. Secure each splint in place above and below the fracture site with improvised (or actual) cravats 
+  utter_broken_ankle:
+  - text: 
+      1) Rest is key. Staying off your injury will help you heal faster. 
+      2) Go to the hospital if you cannot bear weight on your ankle and you will likely wear a cast to help keep the foot and ankle immobilized. 
+      3) Ice the area for 20 minutes at a time to help with swelling and inflammation.
+      4) Keep your foot and ankle raised slightly above the level of your heart to help reduce inflammation.
+      5) If the pain becomes unbearable, take an over-the-counter pain killer
+  utter_ulcer:
+  - text: 
+      1) Try eating any of these food items to reduce the pain. Honey, Green tea, Apples, yogurt, cabbage juice, garlic, spinach.
+      2) Avoid food like acidic foods, spicy foods, coffee, carbonated drinks, deep-fried foods
+      3) Use acetaminophen for over-the-counter pain relief and avoid aspirin unless your doctor says otherwise.
+  utter_head_injury:
+  - text: Is the patient conscious or unconscious
+    buttons:
+    - payload: /head_injury_conscious
+      title: conscious
+    - payload: /head_injury_unconscious
+      title: unconscious
+  utter_head_injury_conscious:
+  - text: 
+      If the patient is conscious;
+      1.  Follow the steps for handling emergency.
+      2.  If no spinal injury is suspected, place the patient in a position of comfort (usually lying down) with their head and shoulders slightly raised.
+      3.  Control any bleeding with direct pressure at the point of bleeding. If you suspect the skull is fractured, use gentle pressure around the wound.
+      4.  If blood or fluid comes from the ear, secure a sterile dressing lightly over the ear. Lie the patient on their injured side, if possible, to allow the fluid to drain.
+      5.  Seek medical aid.
+  utter_head_injury_unconscious:
+  - text: 
+      If the patient is unconscious;
+      1.  Follow the steps for handling emergency.
+      2.  If the patient is unconscious and a neck or spinal injury is suspected, place the patient in the recovery position, carefully supporting the patient’s head and neck, and avoid twisting or bending during movement.
+      3.  Ensure the patient’s airway is clear and open. Keep the patient’s airway open by lifting their chin. Do not force if  the face is badly injured.
+      4.  Call 112 for an ambulance.
+  utter_broken_neck:
+  - text: Is the patient conscious or unconscious
+    buttons:
+    - payload: /broken_neck_conscious
+      title: conscious
+    - payload: /broken_neck_unconscious
+      title: unconscious
+  utter_broken_neck_conscious:
+  - text: 
+      DO NOT MOVE SOMEONE WITH A SUSPECTED NECK OR SPINE INJURY UNLESS THE PERSON MUST BE MOVED BECAUSE HIS OR HER SAFETY IS IN DANGER.
+      1) Keep two rolled-up towels by the sides of the neck for support
+      2) If necessary, use both of your hands, one on each side of the victim's head, to keep the head from moving.
+      3) Call 112 for an ambulance 
+      NOTE If you must move someone with a suspected neck or spinal injury follow these procedures
+      a)Select a stretcher, door or other rigid board.
+      b)Several people should carefully lift and move the person onto the board, being very careful to align the head and neck in a straight line with the spine. The head should not rotate or bend forward or backward.
+      c)Make sure one person uses both of his or her hands, one on each side of the victim's head, to keep the head from moving
+  utter_broken_neck_unconscious:
+  - text: 
+      DO NOT MOVE SOMEONE WITH A SUSPECTED NECK OR SPINE INJURY UNLESS THE PERSON MUST BE MOVED BECAUSE HIS OR HER SAFETY IS IN DANGER.
+      1) Keep two rolled-up towels by the sides of the neck for support
+      2) If necessary, use both of your hands, one on each side of the victim's head, to keep the head from moving.
+      3) Perform CPR but when you do the "Airway and Breathing" part of CPR, do not tilt the head back or move the head or neck. Instead, pull the lower jaw (chin) forward to open the airway.
+ 
+  utter_did_that_help:
+  - text: Did that help you?
+  - text: Was that helpful?
+  - text: Are you feeling better?
+  utter_help:
+  - text: Please stay calm, I am here to help
+  - text: Don't panic, I am here to guide you
+  - text: Stay calm and talk to me
+  utter_out_of_scope:
+  - text: Sorry, I can't handle that request. Do you want to continue?
+  utter_goodbye:
+  - text: Thank you for trusting me
+  - text: Glad to be of help
+  - text: Stay safe
+  - text: You are welcome
+  utter_end:
+  - text: Please stay safe. 
+  - text: Stay safe, ok? 
+  utter_iamabot:
+  - text: I am F.A.D.A, a virtual first-aid guide and I was built to help anyone with home accidents.
+  - text: I am F.A.D.A, a virtual first-aid guide for domestic accidents. Built to assist you with your emergency. Just send your home emergency cases and I can guide you through the process.
+  - text: I am F.A.D.A, a virtual first-aid guide built to assist people through their home emergencies no matter how minor.
+  utter_default:
+  - text: Sorry I didn't get that. Can you rephrase?
+  utter_hospital:
+  - text: Remember to call 112 for an ambulance immediately for major emergencies.
+  - text: Please call an ambulance (112) and your family doctor if the victim is still inresponsive after first-aid. 
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
