@@ -18,7 +18,6 @@ nlu:
     - how are you?
     - good day
     - what's good
-    - how are you?
     - wassup
     - HI
 - intent: goodbye
@@ -94,7 +93,6 @@ nlu:
     - nevermind
     - I want to do something else
     - I changed my mind
-    
 - intent: mood_better
   examples: |
     - it worked
@@ -205,20 +203,21 @@ nlu:
     - I am vomiting
     - vomit
     - i am sick of vomiting all day
-    - The person’s clothes covered in vomit. 
+    - The person’s clothes covered in vomit.
 - intent: vomiting_child
   examples: |
-    - what should i give a child for vomiting 
+    - what should i give a child for vomiting
     - My child vomited.
     - my little daughter keeps vomiting
     - How to stop a child vomiting?
     - Can this child stop vomiting?
     - my baby is vomiting
     - my child is vomiting and i need to stop it
+    - /vomiting_child
 - intent: vomiting_adult
   examples: |
     - my oldest son is vomiting
-    - adult vomiting 
+    - adult vomiting
     - elder woman keeps vomiting
     - Stop vomiting for an adult
     - My mother is vomiting
@@ -345,7 +344,7 @@ nlu:
     - How do you treat palm wounds?
     - How long do palm injuries take to heal?
     - How do you treat bleeding hands?
-    - fell and landed on my palm 
+    - fell and landed on my palm
     - i cut my hand with a knife
 - intent: wound
   examples: |
@@ -431,7 +430,7 @@ nlu:
     - Will a splinter come out on its own?
     - how to remove deep splinter
     - how to draw out a splinter
-    - i have a splinter stuck in my skin 
+    - i have a splinter stuck in my skin
 - intent: swollen_ankle
   examples: |
     - How do you treat a swollen ankle?
@@ -477,7 +476,7 @@ nlu:
     - I have ulcer pain
     - stomach ulcer
     - what is good for stomach ulcer?
-    - my ulcer is bad 
+    - my ulcer is bad
 - intent: head_injury
   examples: |
     - I fell and injured my head
@@ -491,7 +490,7 @@ nlu:
     - hit her head and she is bleeding
     - i hurt my head
     - The person has a potential head injury and is unable to speak
-    - fell and hit his head 
+    - fell and hit his head
     - a victim lying on the ground face up with a head wound
 - intent: head_injury_conscious
   examples: |
@@ -501,7 +500,7 @@ nlu:
     - Treatment for conscious head injury?
     - Treatment for a conscious person that hurt their head?
     - She hurt her head but is awake, What do i do ?
-    - She hit her head hard on the goal post. She is lying on the ground, only responding to pain. 
+    - She hit her head hard on the goal post. She is lying on the ground, only responding to pain.
 - intent: head_injury_unconscious
   examples: |
     - How do i treat a unconscious person with head injury?
@@ -520,7 +519,7 @@ nlu:
     - broken neck help
     - How do you treat a neck injury?
     - how to assist someone with a broken neck
-    - fell and broke her neck 
+    - fell and broke her neck
     - someone slipped and broke his neck
 - intent: broken_neck_unconscious
   examples: |
@@ -551,7 +550,7 @@ nlu:
     - what are the treatments for stuffy nose in children
     - stuffy nose
     - blocked nose
-    - i have catarrh 
+    - i have catarrh
     - catarrah
 - intent: cough
   examples: |
@@ -575,8 +574,8 @@ nlu:
     - What is best medicine for sore throat?
     - how to ease a sore throat?
     - how to get rid of a sore throat
-    - my throat hurts 
-    - i can't swallow well because my throat is sore 
+    - my throat hurts
+    - i can't swallow well because my throat is sore
 - intent: stomach_pain
   examples: |
     - How do you treat stomach Pain ?
@@ -644,7 +643,7 @@ nlu:
     - How to cure Cold ?
     - how to get rid of a cold fast
     - remedies for stopping a cold
-    - my cold is getting worse 
+    - my cold is getting worse
     - i keep sneezing
 - intent: rash
   examples: |
@@ -654,8 +653,8 @@ nlu:
     - Which medicine to take if I have a Rash?
     - How to cure Rash?
     - Rash on my skin
-    - i have rashes and they are so itchy 
-    - my back is full of rashes 
+    - i have rashes and they are so itchy
+    - my back is full of rashes
     - how to reduce rashes
 - intent: animal_bite
   examples: |
@@ -718,9 +717,9 @@ nlu:
     - How do you help someone who has fainted?
     - what to do when someone faints?
     - she fainted what do i do now
-    - A co-worker collapses unconscious in front of me 
+    - A co-worker collapses unconscious in front of me
     - she just collapsed
-    - they fainted from heatstroke 
+    - they fainted from heatstroke
     - One of the new people has collapsed onto their desk
 - intent: seizures
   examples: |
@@ -734,10 +733,10 @@ nlu:
     - How do you control an emergency seizure?
     - What do you do when someone is having a seizure?
     - A seizure in someone with known epilepsy.
-    - the person is epileptic 
+    - the person is epileptic
     - Falls to the ground making a funny noise and starts shaking uncontrollably
     - shaking uncontrollably
-    - she is convulsing what do i do 
+    - she is convulsing what do i do
     - how to stop convulsion in a seizure
     - epileptic seizure
 - intent: panic_attack
@@ -753,7 +752,6 @@ nlu:
     - Stopping panic attack
     - Reducing panic attacks
     - She is hyperventilating
-    - first aid panic attack paper bag
     - i am about having a panic attack
 - intent: heart_attack
   examples: |
@@ -793,7 +791,7 @@ nlu:
     - how to help someone who was drowning
     - how to save someone from drowning
     - someone is drowning
-    - we just pulled someone out of the water, she drowned 
+    - we just pulled someone out of the water, she drowned
 - intent: dislocated_finger
   examples: |
     - I broke my finger
@@ -893,11 +891,11 @@ nlu:
     - cpr for someone unconscious
     - she is not breathing
     - she has no pulse
-    - what is the procedure for cpr? 
-    - the person is unconscious 
+    - what is the procedure for cpr?
+    - the person is unconscious
     - cpr for unconscious person
-    - i can't hear any breathing sound 
-    - he stopped breathing 
+    - i can't hear any breathing sound
+    - he stopped breathing
     - The patient is not breathing
     - someone is unresponsive and not breathing
 - intent: cpr_baby
@@ -919,7 +917,7 @@ nlu:
     - My kid is unconscious
     - How to perform cpr on a child?
     - Where do you push for a child when doing CPR?
-    - how to do cpr properly on a kid 
+    - how to do cpr properly on a kid
 - intent: cpr_adult
   examples: |
     - Someone needs cpr
@@ -942,7 +940,7 @@ nlu:
     - should i wear black today
     - what is the color of the sky
     - i need food
-    - can you buy something for me ? 
+    - can you buy something for me ?
 - intent: bot_challenge
   examples: |
     - are you a bot?
