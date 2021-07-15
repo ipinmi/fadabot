@@ -15,8 +15,9 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-    - good morning, i need help
-    - good morning, i need your help
+    - how are you?
+    - good day
+    - what's good
     - how are you?
     - wassup
     - HI
@@ -61,6 +62,7 @@ nlu:
     - yup
     - sure
     - ok
+    - right
     - k
     - nice
 - intent: deny
@@ -79,6 +81,20 @@ nlu:
     - That is not the issue
     - I don't want to tell you that
     - that's not right
+    - that's not what I want
+    - This is not the right thing
+    - wrong injury
+    - wait stop
+    - you're no help
+    - this is no help at all
+    - this isn't working
+    - I already told you that
+    - none of your business
+    - stop asking
+    - nevermind
+    - I want to do something else
+    - I changed my mind
+    
 - intent: mood_better
   examples: |
     - it worked
@@ -116,6 +132,8 @@ nlu:
     - i need assistance
     - help
     - help g
+    - good morning, i need help
+    - good morning, i need your help
     - hellllppppp!!!!!!
     - can you help me
     - help me
@@ -151,6 +169,8 @@ nlu:
     - I got a burn from hot oil splashing on me
     - Fire burnt my skin while cooking
     - Just had a hot water burn
+    - she poured the boiling water onto her arm.
+    - A man burnt himself while cooking
 - intent: food_poisoning
   examples: |
     - I think I have food poisoning
@@ -160,6 +180,8 @@ nlu:
     - I am vomiting and stooling
     - i have food poisoning
     - stomach pain from spoilt food
+    - i keep stooling
+    - i am stooling
 - intent: nosebleed
   examples: |
     - How do you treat a bleeding nose ?
@@ -183,8 +205,10 @@ nlu:
     - I am vomiting
     - vomit
     - i am sick of vomiting all day
+    - The person’s clothes covered in vomit. 
 - intent: vomiting_child
   examples: |
+    - what should i give a child for vomiting 
     - My child vomited.
     - my little daughter keeps vomiting
     - How to stop a child vomiting?
@@ -194,6 +218,8 @@ nlu:
 - intent: vomiting_adult
   examples: |
     - my oldest son is vomiting
+    - adult vomiting 
+    - elder woman keeps vomiting
     - Stop vomiting for an adult
     - My mother is vomiting
     - Teenager vomiting
@@ -265,6 +291,7 @@ nlu:
     - bleeding
     - the blood won't stop
     - someone is bleeding around me
+    - What is the best Way to stop external Blood Loss?
 - intent: bleeding_gum
   examples: |
     - Is gum bleeding serious?
@@ -303,6 +330,7 @@ nlu:
     - I cut my arm and the bleeding won't stop
     - I bruised my arm
     - I have a gash in my left arm
+    - Bleeding heavily from a huge cut in his arm.
 - intent: bleeding_palm
   examples: |
     - I am bleeding a lot
@@ -312,6 +340,13 @@ nlu:
     - I have a deep cut in my palm
     - How to reduce bleeding in my palm
     - she grazed her palm on the ground
+    - i injured my palm
+    - How do you know if a hand injury is serious?
+    - How do you treat palm wounds?
+    - How long do palm injuries take to heal?
+    - How do you treat bleeding hands?
+    - fell and landed on my palm 
+    - i cut my hand with a knife
 - intent: wound
   examples: |
     - How do you treat a wound?
@@ -374,9 +409,10 @@ nlu:
     - What to do if you get hit in the jaw?
     - What to do about an Injured Jaw
     - my cousin fell down and broke his jaw
-    - fracture my jaw
+    - fractured my jaw
 - intent: knockedout_tooth
   examples: |
+    - He is missing a tooth and bleeding from the mouth.
     - I hit my mouth and my tooth fell out
     - My tooth removed, What do i do?
     - How to fix a fallen tooth
@@ -395,6 +431,7 @@ nlu:
     - Will a splinter come out on its own?
     - how to remove deep splinter
     - how to draw out a splinter
+    - i have a splinter stuck in my skin 
 - intent: swollen_ankle
   examples: |
     - How do you treat a swollen ankle?
@@ -440,6 +477,7 @@ nlu:
     - I have ulcer pain
     - stomach ulcer
     - what is good for stomach ulcer?
+    - my ulcer is bad 
 - intent: head_injury
   examples: |
     - I fell and injured my head
@@ -453,6 +491,8 @@ nlu:
     - hit her head and she is bleeding
     - i hurt my head
     - The person has a potential head injury and is unable to speak
+    - fell and hit his head 
+    - a victim lying on the ground face up with a head wound
 - intent: head_injury_conscious
   examples: |
     - How do i treat a conscious person with head injury?
@@ -461,13 +501,15 @@ nlu:
     - Treatment for conscious head injury?
     - Treatment for a conscious person that hurt their head?
     - She hurt her head but is awake, What do i do ?
+    - She hit her head hard on the goal post. She is lying on the ground, only responding to pain. 
 - intent: head_injury_unconscious
   examples: |
     - How do i treat a unconscious person with head injury?
     - What do i do to a person that is not awake with head injury?
-    - Someone is bleeding on the head but is awake, what should i do?
+    - Someone is bleeding on the head but unconscious, what should i do?
     - Treatment for unconscious head injury?
     - Treatment for an unconscious person with a head injury?
+    - Someone falls down a step and hit their head and it starts bleed, now they fall unconscious.
     - he hit his head and he is unconscious
 - intent: broken_neck
   examples: |
@@ -478,6 +520,8 @@ nlu:
     - broken neck help
     - How do you treat a neck injury?
     - how to assist someone with a broken neck
+    - fell and broke her neck 
+    - someone slipped and broke his neck
 - intent: broken_neck_unconscious
   examples: |
     - someone is unconscious from breaking his neck
@@ -504,6 +548,11 @@ nlu:
     - how to clear a stuffy nose
     - How can I unblock my nose fast?
     - my nose hurts
+    - what are the treatments for stuffy nose in children
+    - stuffy nose
+    - blocked nose
+    - i have catarrh 
+    - catarrah
 - intent: cough
   examples: |
     - How to cure cough?
@@ -526,6 +575,8 @@ nlu:
     - What is best medicine for sore throat?
     - how to ease a sore throat?
     - how to get rid of a sore throat
+    - my throat hurts 
+    - i can't swallow well because my throat is sore 
 - intent: stomach_pain
   examples: |
     - How do you treat stomach Pain ?
@@ -581,6 +632,9 @@ nlu:
     - my head is hurting
     - I have a bad headache
     - How many milligrams of Paracetamol tablet do I take for pain as an adult?
+    - how is a migraine treated?
+    - i have a migraine
+    - migraines
 - intent: cold
   examples: |
     - How do you treat a Cold ?
@@ -590,6 +644,7 @@ nlu:
     - How to cure Cold ?
     - how to get rid of a cold fast
     - remedies for stopping a cold
+    - my cold is getting worse 
     - i keep sneezing
 - intent: rash
   examples: |
@@ -599,6 +654,8 @@ nlu:
     - Which medicine to take if I have a Rash?
     - How to cure Rash?
     - Rash on my skin
+    - i have rashes and they are so itchy 
+    - my back is full of rashes 
     - how to reduce rashes
 - intent: animal_bite
   examples: |
@@ -661,6 +718,10 @@ nlu:
     - How do you help someone who has fainted?
     - what to do when someone faints?
     - she fainted what do i do now
+    - A co-worker collapses unconscious in front of me 
+    - she just collapsed
+    - they fainted from heatstroke 
+    - One of the new people has collapsed onto their desk
 - intent: seizures
   examples: |
     - She is having a seizure
@@ -672,6 +733,13 @@ nlu:
     - Seizure first aid
     - How do you control an emergency seizure?
     - What do you do when someone is having a seizure?
+    - A seizure in someone with known epilepsy.
+    - the person is epileptic 
+    - Falls to the ground making a funny noise and starts shaking uncontrollably
+    - shaking uncontrollably
+    - she is convulsing what do i do 
+    - how to stop convulsion in a seizure
+    - epileptic seizure
 - intent: panic_attack
   examples: |
     - Someone is having a panic attack
@@ -685,6 +753,7 @@ nlu:
     - Stopping panic attack
     - Reducing panic attacks
     - She is hyperventilating
+    - first aid panic attack paper bag
     - i am about having a panic attack
 - intent: heart_attack
   examples: |
@@ -709,6 +778,9 @@ nlu:
     - how do you reduce chemical poisoning
     - she inhaled insecticide
     - what do you do for kerosene poisoning
+    - How do you remove poison from your body?
+    - What is the first aid priority when managing a casualty who has been poisoned?
+    - How do you treat poisoning?
 - intent: drowning
   examples: |
     - What to do if someone is Drowning?
@@ -721,6 +793,7 @@ nlu:
     - how to help someone who was drowning
     - how to save someone from drowning
     - someone is drowning
+    - we just pulled someone out of the water, she drowned 
 - intent: dislocated_finger
   examples: |
     - I broke my finger
@@ -771,6 +844,8 @@ nlu:
     - an adult fractured their hand, How do you repair it?
     - How to take care of a broken arm
     - I have just broken my arm
+    - Trips over the top and lands heavily on their arm
+    - he is in obvious pain and his arm is clearly broken, with a piece of bone protruding from the skin.
 - intent: broken_leg
   examples: |
     - I dislocated my leg
@@ -818,6 +893,13 @@ nlu:
     - cpr for someone unconscious
     - she is not breathing
     - she has no pulse
+    - what is the procedure for cpr? 
+    - the person is unconscious 
+    - cpr for unconscious person
+    - i can't hear any breathing sound 
+    - he stopped breathing 
+    - The patient is not breathing
+    - someone is unresponsive and not breathing
 - intent: cpr_baby
   examples: |
     - I need to perform cpr on my baby
@@ -826,6 +908,7 @@ nlu:
     - My baby is unconscious
     - cpr on a small baby
     - How to perform cpr on a baby?
+    - Where do you push for a baby when doing CPR?
 - intent: cpr_kid
   examples: |
     - I need to perform cpr on my child
@@ -835,6 +918,8 @@ nlu:
     - My young boy needs cpr
     - My kid is unconscious
     - How to perform cpr on a child?
+    - Where do you push for a child when doing CPR?
+    - how to do cpr properly on a kid 
 - intent: cpr_adult
   examples: |
     - Someone needs cpr
@@ -847,24 +932,17 @@ nlu:
     - Can you teach people at home how to apply CPR for an unresponsive adult?
 - intent: out_of_scope
   examples: |
-    - that's not what I want
-    - This is not the right thing
-    - wrong injury
-    - wait stop
-    - you're no help
-    - this is no help at all
     - how old are you
     - I want to order a pizza
     - tell me the weather
-    - this isn't working
-    - I already told you that
-    - none of your business
-    - stop asking
-    - nevermind
-    - I want to do something else
-    - I changed my mind
     - 4-2 is what?
     - How do l get to Ikeja?
+    - let's dance
+    - i want to order a car
+    - should i wear black today
+    - what is the color of the sky
+    - i need food
+    - can you buy something for me ? 
 - intent: bot_challenge
   examples: |
     - are you a bot?
