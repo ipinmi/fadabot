@@ -450,6 +450,7 @@ nlu:
     - he is bleeding on his face
     - hit her head and she is bleeding
     - i hurt my head
+    - The person has a potential head injury and is unable to speak
 - intent: head_injury_conscious
   examples: |
     - How do i treat a conscious person with head injury?
