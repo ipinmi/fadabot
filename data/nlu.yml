@@ -77,6 +77,8 @@ nlu:
     - nope
     - nah
     - That is not the issue
+    - I don't want to tell you that
+    - that's not right
 - intent: mood_better
   examples: |
     - it worked
@@ -855,10 +857,7 @@ nlu:
     - tell me the weather
     - this isn't working
     - I already told you that
-    - don't like that
-    - I don't want to tell you that
     - none of your business
-    - that's not right
     - stop asking
     - nevermind
     - I want to do something else
