@@ -587,6 +587,9 @@ responses:
   - text: Stay calm and talk to me
   utter_out_of_scope:
   - text: Sorry, I can't handle that request. Do you want to continue?
+  utter_restart:
+  - text: Okay, let's start afresh. What is the issue?
+  - text: Oh okay, let's try again. What is wrong?
   utter_goodbye:
   - text: Thank you for trusting me
   - text: Glad to be of help
