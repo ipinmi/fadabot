@@ -51,7 +51,7 @@ stories:
   - action: utter_cough
   - action: utter_did_that_help
   - intent: deny
-  - action: utter_out_of_scope
+  - action: utter_repeat
   - intent: affirm
   - action: utter_type
   - intent: ear_injury
@@ -68,7 +68,7 @@ stories:
   - action: utter_animal_bite
   - action: utter_did_that_help
   - intent: deny
-  - action: utter_end
+  - action: utter_restart
 
 - story: survey stop
   steps:
