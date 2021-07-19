@@ -100,3 +100,29 @@ stories:
     user: |-
       thank you
   - action: utter_goodbye
+- story: Story from Conversation ID 195c2f22ecba43638c53be050b169703
+  steps:
+  - intent: mood_injured
+    user: |-
+      I just had a motorcycle accident
+  - action: utter_type
+  - intent: broken_leg
+    user: |-
+      I broke my leg
+  - action: utter_broken_leg
+  - action: utter_splint
+- story: Story from Conversation ID 8169bf07dcd146989c385050db15ae61
+  steps:
+  - intent: greet
+    user: |-
+      hi
+  - action: utter_hospital
+  - action: utter_greet
+  - intent: vomiting
+    user: |-
+      vomiting
+  - action: utter_vomiting
+  - intent: vomiting_child
+    user: |-
+      /vomiting_child
+  - action: utter_vomiting_child

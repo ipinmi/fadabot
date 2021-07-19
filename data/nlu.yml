@@ -157,6 +157,7 @@ nlu:
     - I am injured
     - I just got into a car accident
     - I just got into a motor accident
+    - I just had a motorcycle accident
 - intent: burn
   examples: |
     - I burnt myself, What do I do?
@@ -204,6 +205,10 @@ nlu:
     - vomit
     - i am sick of vomiting all day
     - The person’s clothes covered in vomit.
+    - why am i vormitting
+    - vormit
+    - a girl is vomiting
+    - i am vomiting
 - intent: vomiting_child
   examples: |
     - what should i give a child for vomiting
@@ -214,6 +219,7 @@ nlu:
     - my baby is vomiting
     - my child is vomiting and i need to stop it
     - /vomiting_child
+    - a child is vormitting
 - intent: vomiting_adult
   examples: |
     - my oldest son is vomiting
@@ -409,6 +415,7 @@ nlu:
     - What to do about an Injured Jaw
     - my cousin fell down and broke his jaw
     - fractured my jaw
+    - broken jaw
 - intent: knockedout_tooth
   examples: |
     - He is missing a tooth and bleeding from the mouth.
@@ -420,6 +427,7 @@ nlu:
     - Can a knocked out tooth be saved?
     - What to do with a knocked out tooth
     - My tooth is knocked out, What should I do now?
+    - knockedout_tooth
 - intent: splinter
   examples: |
     - How to remove Splinters
@@ -492,6 +500,7 @@ nlu:
     - The person has a potential head injury and is unable to speak
     - fell and hit his head
     - a victim lying on the ground face up with a head wound
+    - Please help me I broke my skull and my brain is all over the place
 - intent: head_injury_conscious
   examples: |
     - How do i treat a conscious person with head injury?
@@ -587,6 +596,9 @@ nlu:
     - how to get rid of stomach ache
     - i have stomach ache
     - Stomach pain
+    - What is is remedy for stomach pain
+    - I have a stomach ache
+    - Stomach ache
 - intent: bruises
   examples: |
     - How do you treat Bruises ?
@@ -634,6 +646,8 @@ nlu:
     - how is a migraine treated?
     - i have a migraine
     - migraines
+    - What is the remedy for headache
+    - i have an headache
 - intent: cold
   examples: |
     - How do you treat a Cold ?
@@ -739,6 +753,7 @@ nlu:
     - she is convulsing what do i do
     - how to stop convulsion in a seizure
     - epileptic seizure
+    - seizure
 - intent: panic_attack
   examples: |
     - Someone is having a panic attack
@@ -857,6 +872,8 @@ nlu:
     - leg fracture
     - broken leg
     - i broke my leg bad
+    - my brother has a broken leg
+    - borken leg
 - intent: sling
   examples: |
     - How do you make a sling
