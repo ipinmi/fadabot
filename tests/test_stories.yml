@@ -126,3 +126,19 @@ stories:
     user: |-
       /vomiting_child
   - action: utter_vomiting_child
+- story: Story from Conversation ID 9d6ab0e0714247f9ad655bae50020320
+  steps:
+  - intent: fainting
+    user: |-
+      i feel dizzy
+  - action: utter_fainting
+  - action: utter_recovery_position
+  - action: utter_cpr
+  - intent: cpr_adult
+    user: |-
+      /cpr_adult
+  - action: utter_cpr_adult
+  - intent: thankyou
+    user: |-
+      thanksss
+  - action: utter_goodbye

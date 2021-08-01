@@ -48,6 +48,8 @@ nlu:
     - yes it was, thanks
     - thanks it worked
     - thank youu
+    - you are a life saver
+    - thanksss
 - intent: affirm
   examples: |
     - yes
@@ -574,6 +576,7 @@ nlu:
     - i can't stop coughing
     - cough
     - i am coughing
+    - i have a cough
 - intent: sore_throat
   examples: |
     - How do you treat sore throat ?
@@ -735,6 +738,11 @@ nlu:
     - she just collapsed
     - they fainted from heatstroke
     - One of the new people has collapsed onto their desk
+    - i am about to faint
+    - i think i want to faint
+    - hi i am dizzy
+    - i feel dizzy
+    - faint
 - intent: seizures
   examples: |
     - She is having a seizure
@@ -935,6 +943,7 @@ nlu:
     - How to perform cpr on a child?
     - Where do you push for a child when doing CPR?
     - how to do cpr properly on a kid
+    - /cpr_kid
 - intent: cpr_adult
   examples: |
     - Someone needs cpr

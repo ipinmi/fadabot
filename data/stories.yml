@@ -1,7 +1,5 @@
 version: "2.0"
-
 stories:
-
 - story: right path 1
   steps:
   - intent: greet
@@ -13,7 +11,6 @@ stories:
   - action: utter_nosebleed
   - intent: thankyou
   - action: utter_goodbye
-
 - story: right path 2
   steps:
   - intent: help
@@ -23,7 +20,6 @@ stories:
   - action: utter_jaw_injury
   - intent: thankyou
   - action: utter_goodbye
-
 - story: right path 4
   steps:
   - intent: help
@@ -31,7 +27,6 @@ stories:
   - action: utter_type
   - intent: bleeding
   - action: utter_bleeding
-
 - story: right path 3
   steps:
   - intent: greet
@@ -41,7 +36,6 @@ stories:
   - action: utter_headache
   - intent: thankyou
   - action: utter_goodbye
-
 - story: wrong path 1
   steps:
   - intent: greet
@@ -58,7 +52,6 @@ stories:
   - action: utter_ear_injury
   - intent: thankyou
   - action: utter_goodbye
-
 - story: wrong path 2
   steps:
   - intent: greet
@@ -69,7 +62,6 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_restart
-
 - story: survey stop
   steps:
   - intent: greet
@@ -81,7 +73,6 @@ stories:
   - action: utter_out_of_scope
   - intent: deny
   - action: utter_end
-
 - story: survey continue
   steps:
   - intent: greet
@@ -97,7 +88,6 @@ stories:
   - action: utter_jaw_injury
   - intent: goodbye
   - action: utter_goodbye
-
 - story: right story 1
   steps:
   - intent: help
@@ -107,7 +97,6 @@ stories:
   - action: utter_burn
   - intent: thankyou
   - action: utter_goodbye
-
 - story: right story 2
   steps:
   - intent: greet
@@ -119,3 +108,14 @@ stories:
   - action: utter_bleeding_arm
   - intent: thankyou
   - action: utter_goodbye
+- story: Story from Conversation ID 2e250f65c4b44bc1a8c62efaa208a9c1
+  steps:
+  - intent: help
+  - action: utter_help
+  - action: utter_type
+  - intent: fainting
+  - action: utter_fainting
+  - action: utter_recovery_position
+  - action: utter_cpr
+  - intent: cpr_kid
+  - action: utter_cpr_kid
